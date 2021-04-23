@@ -1,0 +1,15 @@
+#pragma data_seg(".JOE")
+HANDLE hWnd = NULL;
+#pragma dta_seg()
+#pragma comment(linker, "/section:.JOE,rws")
+
+
+
+void SetWindow(HWND w)
+   {
+    hWnd = w;
+   }
+
+   #define UWM_MOUSEHOOK_MSG \
+	_T("UMW_MOUSEHOOK-" \
+        "{input}")
